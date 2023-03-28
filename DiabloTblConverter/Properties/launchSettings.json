@@ -2,7 +2,7 @@
   "profiles": {
     "DiabloTblConverter": {
       "commandName": "Project",
-      "commandLineArgs": "\"E:\\Git\\Project-Diablo-2\\data\\local\\LNG\\ENG\\patchstring.tbl\" \"E:\\Git\\Project-Diablo-2\\data\\local\\LNG\\ENG\\patchstring.json\""
+      "commandLineArgs": "\"tbl\" \"E:\\Git\\Project-Diablo-2\\data\\local\\LNG\\ENG\\test.json\" \"E:\\Git\\Project-Diablo-2\\data\\local\\LNG\\ENG\\test.tbl\""
     }
   }
 }
