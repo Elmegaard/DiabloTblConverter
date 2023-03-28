@@ -316,14 +316,14 @@ public class TableProcessor
                     writer.Write(entry.HashIndex);
                 }
 
-                foreach (var entry in nodes)
+                foreach (var entry in nodes.OrderBy(x => x.HashIndex))
                 {
-                    byte[] nodeBytes = new byte[TblHashNode.size];
-                    IntPtr ptr = Marshal.AllocHGlobal(TblHashNode.size);
-                    Marshal.StructureToPtr(entry.HashNode, ptr, true);
-                    Marshal.Copy(ptr, nodeBytes, 0, TblHashNode.size);
-                    Marshal.FreeHGlobal(ptr);
-                    writer.Write(nodeBytes);
+                    writer.Write(entry.HashNode.Active);
+                    writer.Write(entry.HashNode.Index);
+                    writer.Write(entry.HashNode.HashValue);
+                    writer.Write(entry.HashNode.StringKeyOffset);
+                    writer.Write(entry.HashNode.StringValOffset);
+                    writer.Write(entry.HashNode.StringValLength);
                 }
 
                 foreach (var entry in nodes)
