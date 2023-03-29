@@ -1,5 +1,7 @@
 # DiabloTblConverter
-A simple app for converting .tbl files to .json and back again.
+A simple app for converting .tbl files to .json and back again.  
+
+Since .tbl files are binary, they do not work very well with version control. Every time you push a change to a .tbl file in git, you have to push the entire file and you can't merge the files.
 
 ## Usage
 To use it, run the tool with the follwoing parameters:
