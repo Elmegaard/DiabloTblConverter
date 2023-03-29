@@ -15,3 +15,6 @@ DiabloTblConverter.exe "json" "path\to\tbl_file.tbl" "path\to\json_file.json"
 # .json to .tbl
 DiabloTblConverter.exe "tbl" "path\to\json_file.json" "path\to\tbl_file.tbl"
 ```
+
+## Credits
+https://github.com/kambala-decapitator/QTblEditor
